@@ -1,0 +1,8 @@
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied'"
+alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"
+alias rm=trash
+alias zshconfig="atom ~/.zshrc"
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'

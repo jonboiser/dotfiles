@@ -117,7 +117,4 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy && echo 'Public key copied'"
-alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"
-alias rm=trash
-alias zshconfig="atom ~/.zshrc"
+source ~/.aliases
