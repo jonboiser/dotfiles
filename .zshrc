@@ -82,6 +82,8 @@ export PATH=$PATH:$HOME/.cabal/bin
 
 # fasd
 eval "$(fasd --init auto)"
+alias v="f -e vim"
+alias aa="f -e atom"
 
 ZSH_HIGHLIGHT_HIGHLIGHTER=S(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
