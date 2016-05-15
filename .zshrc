@@ -74,7 +74,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # opam
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+source $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # stack and cabal
 export PATH=$PATH:$HOME/.stack/programs/x86_64-osx/ghc-7.8.4/bin
