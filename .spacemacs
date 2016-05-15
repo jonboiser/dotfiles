@@ -28,6 +28,7 @@ values."
      ;; better-defaults
      (colors :variables colors-enable-rainbow-delimeters t)
      emacs-lisp
+     evil-snipe
      javascript
      ;; git
      ;; markdown
@@ -37,6 +38,7 @@ values."
      ;;        shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
+     unimpaired
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
