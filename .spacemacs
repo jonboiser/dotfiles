@@ -23,9 +23,12 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t)
      ;; better-defaults
+     (colors :variables colors-enable-rainbow-delimeters t)
      emacs-lisp
+     javascript
      ;; git
      ;; markdown
      ;; org
@@ -206,7 +209,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
