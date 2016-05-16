@@ -67,8 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # nvm
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-nvm use --delete-prefix stable
+source $(brew --prefix nvm)/nvm.sh || nvm use --delete-prefix stable
 
 # fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
