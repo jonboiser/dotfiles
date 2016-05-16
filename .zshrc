@@ -60,7 +60,7 @@ plugins=(
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/.local/bin"
-export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="/usr/local/man:$MANPATH"
 export KEYTIMEOUT=1
 
 source $ZSH/oh-my-zsh.sh
@@ -68,6 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+nvm use --delete-prefix stable
 
 # fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
