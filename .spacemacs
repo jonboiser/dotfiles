@@ -27,18 +27,24 @@ values."
                       auto-completion-enable-snippets-in-popup t)
      ;; better-defaults
      (colors :variables colors-enable-rainbow-delimeters t)
+     elm
      emacs-lisp
      evil-snipe
+     git
+     haskell
      javascript
-     ;; git
-     ;; markdown
-     ;; org
+     markdown
+     org
+     osx
+     ranger
+     react
+     syntax-checking
+     themes-megapack
+     unimpaired
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; spell-checking
-     ;; syntax-checking
-     unimpaired
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
