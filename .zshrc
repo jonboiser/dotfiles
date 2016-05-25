@@ -93,6 +93,16 @@ export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 
+# antigen
+source $(brew --prefix)/share/antigen.zsh
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle Vifon/deer deer
+antigen bundle valiev/almostontop
+antigen apply
+
+zle -N deer
+bindkey '\ek' deer
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
