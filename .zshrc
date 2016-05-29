@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -50,16 +51,19 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  brew
+  extract
   fasd
   git
-  extract
   npm
   osx
   zsh-syntax-highlighting
 )
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/.local/bin"
+# Move local bin higher up
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/.local/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 export KEYTIMEOUT=1
 
@@ -84,6 +88,9 @@ export PATH=$PATH:$HOME/.cabal/bin
 eval "$(fasd --init auto)"
 alias v="f -e vim"
 alias aa="f -e atom"
+
+# other aliases
+source ~/.aliases
 
 ZSH_HIGHLIGHT_HIGHLIGHTER=S(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
@@ -127,4 +134,3 @@ bindkey '\ek' deer
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.aliases
