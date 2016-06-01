@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -110,6 +110,10 @@ antigen apply
 
 zle -N deer
 bindkey '\ek' deer
+
+autoload -U promptinit && promptinit
+PURE_PROMPT_SYMBOL="➜"
+prompt pure
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
