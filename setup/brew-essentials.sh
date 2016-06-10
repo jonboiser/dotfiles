@@ -12,10 +12,5 @@ brew install moreutils
 brew install findutils
 brew install gnu-sed --with-default-names
 
-# fuzzy file finder
-brew install fzf
-/usr/local/opt/fzf/install
-
-brew install git
 brew install nvm
 brew install the-silver-searcher
