@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 alias almo="almostontop toggle"
 alias apmls="apm list -i -b | perl -pe 's|^(.*?)@.*|\1|'"
 alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"

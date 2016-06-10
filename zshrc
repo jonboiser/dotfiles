@@ -56,4 +56,5 @@ alias v="f -e vim"
 alias aa="f -e atom"
 
 # other aliases
-#source ~/.aliases
+source ~/.zsh/aliases
+source ~/.zsh/functions
