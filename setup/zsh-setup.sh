@@ -6,8 +6,11 @@ brew install zsh
 # change default shell
 sudo chsh -s /usr/local/bin/zsh
 
-# install antigen
-brew install antigen
+# install antigen-hs
+brew install haskell-stack
+stack setup
+stack install base text directory filepath process
+git clone https://github.com/Tarrasch/antigen-hs.git ~/.zsh/antigen-hs/
 
 # install pure prompt
 nvm use stable

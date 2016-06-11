@@ -2,7 +2,6 @@
 # Brew script for tools
 
 brew install dark-mode
-brew install tree
 brew install ranger
 
 # emacs
