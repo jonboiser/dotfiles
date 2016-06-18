@@ -9,12 +9,3 @@ alias zshconfig="atom ~/.zshrc"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-# oh-my-zsh aliases
-# https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
-alias ..="cd .."
-alias ...="cd ../.."
-alias ds="dirs -v"
-
-alias timezsh="time /bin/zsh -i -c exit"
-alias ll="ls"
