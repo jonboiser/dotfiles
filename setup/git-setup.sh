@@ -6,5 +6,5 @@ brew install tig
 brew install hub
 
 # GUI tools
-brew cask install tower
+brew cask install tower-beta
 brew cask install gitup

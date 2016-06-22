@@ -30,12 +30,14 @@ antigen bundle osx
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle Vifon/deer deer
+antigen bundle Vifon/deer
 # antigen bundle valiev/almostontop
 antigen bundle djui/alias-tips
 antigen apply
 
+# iterm profile must map left-options to +Esc
 # deer
+autoload -U deer
 zle -N deer
 bindkey '\ek' deer
 
