@@ -5,18 +5,13 @@ brew update
 
 # more apps
 brew cask install alfred
-brew cask install alfred
 brew cask install atom
 brew cask install atom-beta
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install firefox
 brew cask install google-chrome
-brew cask install google-chrome
-brew cask install iterm2-beta
 brew cask install karabiner
-brew cask install karabiner
-brew cask install seil
 brew cask install seil
 brew cask install sketch
 brew cask install spotify
