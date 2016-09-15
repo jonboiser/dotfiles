@@ -19,7 +19,7 @@ setopt share_history
 export TERM=xterm-256color
 
 # antigen
-source $(brew --prefix)/share/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle brew

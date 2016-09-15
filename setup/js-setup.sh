@@ -11,3 +11,4 @@ apm i emmet
 # npm packages
 npm i -g eslint
 npm i -g flow-bin
+npm i -g eslint-project-relative
