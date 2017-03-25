@@ -37,9 +37,9 @@ antigen apply
 
 # iterm profile must map left-options to +Esc
 # deer
-autoload -U deer
-zle -N deer
-bindkey '\ek' deer
+# autoload -U deer
+# zle -N deer
+# bindkey '\ek' deer
 
 # pure prompt
 autoload -U promptinit && promptinit
@@ -66,8 +66,8 @@ alias v="f -e vim"
 alias aa="f -e atom"
 
 # other aliases
-source ~/.zsh/aliases
-source ~/.zsh/functions
+# source ~/.zsh/aliases
+# source ~/.zsh/functions
 
-export NVM_DIR="/Users/jbois/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

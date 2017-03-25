@@ -11,8 +11,7 @@ brew cask install bartender
 brew cask install bettertouchtool
 brew cask install firefox
 brew cask install google-chrome
-brew cask install karabiner
-brew cask install seil
+brew cask install iterm2
 brew cask install sketch
 brew cask install spotify
 brew cask install tunnelblick

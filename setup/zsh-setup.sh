@@ -10,7 +10,6 @@ sudo chsh -s /usr/local/bin/zsh
 brew install haskell-stack
 stack setup
 stack install base text directory filepath process
-git clone https://github.com/Tarrasch/antigen-hs.git ~/.zsh/antigen-hs/
 
 # install pure prompt
 nvm use stable
@@ -26,6 +25,7 @@ npm i -g trash-cli
 npm i -g tldr
 
 # install rcm and symlink .zshrc
+brew tap thoughtbot/formulae
 brew install rcm
 rcup zshrc
 
