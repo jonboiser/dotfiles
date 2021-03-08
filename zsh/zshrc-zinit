@@ -1,3 +1,8 @@
+# 03-04-2021: Add zinit module to do 'zpmod source-study'
+# https://github.com/zdharma/zinit#zinit-module
+# https://github.com/zdharma/zinit/issues/435
+module_path+=( "$HOME/.zinit/bin/zmodules/Src" )
+zmodload zdharma/zplugin
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -21,13 +26,14 @@ zinit light-mode for \
     zinit-zsh/z-a-bin-gem-node
 ### End of Zinit's installer chunk
 
+
 # ZSH OPTIONS
 export HISTFILE=$HOME/.histfile
 export HISTSIZE=32768;
 export SAVEHIST=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
+export HISTIGNORE="ls:la:1:ll:cd:cd -:pwd:exit:date:* --help";
 export TERM=xterm-256color
 
 setopt append_history
@@ -43,24 +49,33 @@ setopt share_history
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
 
+# 03-04-2021: Add zsh-nvm with lazy load option
+export NVM_LAZY_LOAD=true
+zinit light lukechilds/zsh-nvm
+
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 export PURE_PROMPT_SYMBOL="➜"
 
 zinit snippet OMZ::plugins/git/git.plugin.zsh
-zinit snippet OMZ::plugins/nvm/nvm.plugin.zsh
-zinit snippet OMZ::lib/functions.zsh
+zinit snippet OMZ::plugins/pyenv/pyenv.plugin.zsh
 zinit snippet OMZ::plugins/common-aliases/common-aliases.plugin.zsh
+
+zinit snippet OMZ::lib/functions.zsh
+zinit snippet OMZ::lib/directories.zsh
 
 zinit ice blockf
 zinit light zsh-users/zsh-completions
 
 zinit pack"binary+keys" for fzf
 
-#
+# JUNK
 export KOLIBRI_RUN_MODE="jb"
 
 eval "$(fasd --init auto)"
 alias v="f -e vim"
 alias aa="f -e atom"
+alias zs="cd ~/Github/studio"
 
+alias azrc="atom $HOME/.zshrc"
+alias szrc="source $HOME/.zshrc"
