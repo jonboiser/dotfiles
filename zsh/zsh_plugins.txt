@@ -1,0 +1,18 @@
+djui/alias-tips
+
+ohmyzsh/ohmyzsh path:lib/directories.zsh
+ohmyzsh/ohmyzsh path:lib/git.zsh
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/gitfast
+
+jeffreytse/zsh-vi-mode
+junegunn/fzf path:shell
+rupa/z
+mafredri/zsh-async
+
+# these should be at last!
+sindresorhus/pure
+zdharma/fast-syntax-highlighting
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
