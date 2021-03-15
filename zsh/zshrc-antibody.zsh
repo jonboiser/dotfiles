@@ -33,8 +33,7 @@ alias abb="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh && source ~/
 
 function zvm_after_init() {
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  source /usr/local/opt/asdf/asdf.sh
 }
 
 source ~/.zsh_plugins.sh
-
-
