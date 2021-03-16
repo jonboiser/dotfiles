@@ -1,0 +1,6 @@
+junegunn/fzf path:shell
+rupa/z
+zdharma/fast-syntax-highlighting
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions

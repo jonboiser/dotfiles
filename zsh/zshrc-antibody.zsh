@@ -1,9 +1,9 @@
 autoload -Uz compinit 
 
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
+  compinit;
 else
-	compinit -C;
+  compinit -C;
 fi;
 
 export HISTFILE=$HOME/.histfile
@@ -27,13 +27,17 @@ export PURE_PROMPT_SYMBOL="➜"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export ANTIBODY_HOME=~/Library/antibody
 
-eval "$(fasd --init auto)"
-
-alias abb="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh && source ~/.zsh_plugins.sh"
+function abb() {
+  antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+  antibody bundle < ~/.zsh_plugins_deferred.txt > ~/.zsh_plugins_deferred.sh
+  source ~/.zsh_plugins.sh
+  source ~/.zsh_plugins_deferred.sh
+}
 
 function zvm_after_init() {
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-  source /usr/local/opt/asdf/asdf.sh
 }
 
 source ~/.zsh_plugins.sh
+zsh-defer source ~/.zsh_plugins_deferred.sh
+zsh-defer source /usr/local/opt/asdf/asdf.sh
