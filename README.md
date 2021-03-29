@@ -3,3 +3,5 @@
 ```
 stow zsh -t ~
 ```
+
+@jonboiser
