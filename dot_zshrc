@@ -1,4 +1,0 @@
-export EDITOR="zed --wait"
-
-# aliases
-alias reload='source ~/.zshrc'

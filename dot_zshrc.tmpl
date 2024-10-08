@@ -1,0 +1,18 @@
+# zsh config
+
+autoload -U compinit
+compinit
+
+export EDITOR="zed --wait"
+alias reload="source ~/.zshrc"
+alias cz="chezmoi"
+
+{{ if .is_work_machine -}}
+# Work-only aliases
+alias aws_login=""
+{{- end }}
+
+{{ if lookPath "gs" -}}
+# git-spice completion
+eval "$(gs shell completion zsh)"
+{{- end }}
